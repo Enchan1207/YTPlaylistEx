@@ -16,17 +16,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         // ログイン状態によってStoryboardを切り替える
-        let isLoggedIn: Bool = false
-        
         let storyboardName: String
-        if isLoggedIn{
+        if CredentialStore.shared.isStored() {
             storyboardName = "Main"
         }else{
             storyboardName = "SignUp"
         }
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
         let rootVC = storyboard.instantiateInitialViewController()
-        
         
         // sceneからwindowを生成し、rootVCを割り当てて表示
         window = .init(windowScene: scene as! UIWindowScene)

@@ -20,8 +20,8 @@ class SignUpViewController: UIViewController {
     
     @IBAction func onTapSignup(_ sender: UIButton) {
         youtube.authorize(presentViewController: self, scope: [.readwrite]) { (credential) in
-            print(credential)
-            // TODO: persist access credential
+            // キーチェーンに保存
+            CredentialStore.shared.persist(credential: credential)
             
             // 前の画面に戻る
             DispatchQueue.main.async { [weak self] in

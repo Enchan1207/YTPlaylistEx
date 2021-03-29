@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9E15B6EB26116BC7002BEC3F /* APICredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E15B6EA26116BC7002BEC3F /* APICredentials.swift */; };
+		9E15B6F126118897002BEC3F /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 9E15B6F026118897002BEC3F /* KeychainAccess */; };
+		9E15B6F426118C76002BEC3F /* CredentialStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E15B6F326118C76002BEC3F /* CredentialStore.swift */; };
 		9E74ECE726115DCB003BA3B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E74ECE626115DCB003BA3B2 /* AppDelegate.swift */; };
 		9E74ECE926115DCB003BA3B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E74ECE826115DCB003BA3B2 /* SceneDelegate.swift */; };
 		9E74ECEB26115DCB003BA3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E74ECEA26115DCB003BA3B2 /* ViewController.swift */; };
@@ -23,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		9E15B6EA26116BC7002BEC3F /* APICredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICredentials.swift; sourceTree = "<group>"; };
+		9E15B6F326118C76002BEC3F /* CredentialStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialStore.swift; sourceTree = "<group>"; };
 		9E74ECE326115DCB003BA3B2 /* YTPlaylistEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTPlaylistEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E74ECE626115DCB003BA3B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E74ECE826115DCB003BA3B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E15B6F126118897002BEC3F /* KeychainAccess in Frameworks */,
 				9E74ECFD26115DE9003BA3B2 /* YoutubeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +74,7 @@
 			children = (
 				9E74ECE626115DCB003BA3B2 /* AppDelegate.swift */,
 				9E74ECE826115DCB003BA3B2 /* SceneDelegate.swift */,
+				9E15B6F326118C76002BEC3F /* CredentialStore.swift */,
 				9E74ED0126115E97003BA3B2 /* CALayerExt.swift */,
 				9E74ECFF26115E97003BA3B2 /* DesignableButton.swift */,
 				9E74ECEA26115DCB003BA3B2 /* ViewController.swift */,
@@ -110,6 +115,7 @@
 			name = YTPlaylistEx;
 			packageProductDependencies = (
 				9E74ECFC26115DE9003BA3B2 /* YoutubeKit */,
+				9E15B6F026118897002BEC3F /* KeychainAccess */,
 			);
 			productName = YTPlaylistEx;
 			productReference = 9E74ECE326115DCB003BA3B2 /* YTPlaylistEx.app */;
@@ -140,6 +146,7 @@
 			mainGroup = 9E74ECDA26115DCB003BA3B2;
 			packageReferences = (
 				9E74ECFB26115DE9003BA3B2 /* XCRemoteSwiftPackageReference "YoutubeKit" */,
+				9E15B6EF26118897002BEC3F /* XCRemoteSwiftPackageReference "KeychainAccess" */,
 			);
 			productRefGroup = 9E74ECE426115DCB003BA3B2 /* Products */;
 			projectDirPath = "";
@@ -169,6 +176,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E15B6F426118C76002BEC3F /* CredentialStore.swift in Sources */,
 				9E15B6EB26116BC7002BEC3F /* APICredentials.swift in Sources */,
 				9E74ED0B26115EC3003BA3B2 /* SignUpViewController.swift in Sources */,
 				9E74ECEB26115DCB003BA3B2 /* ViewController.swift in Sources */,
@@ -379,6 +387,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		9E15B6EF26118897002BEC3F /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.2;
+			};
+		};
 		9E74ECFB26115DE9003BA3B2 /* XCRemoteSwiftPackageReference "YoutubeKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "git@github.com:Enchan1207/YoutubeKit.git";
@@ -390,6 +406,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		9E15B6F026118897002BEC3F /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E15B6EF26118897002BEC3F /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
 		9E74ECFC26115DE9003BA3B2 /* YoutubeKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 9E74ECFB26115DE9003BA3B2 /* XCRemoteSwiftPackageReference "YoutubeKit" */;
