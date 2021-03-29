@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		9E74ECEE26115DCB003BA3B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E74ECEC26115DCB003BA3B2 /* Main.storyboard */; };
 		9E74ECF026115DCC003BA3B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E74ECEF26115DCC003BA3B2 /* Assets.xcassets */; };
 		9E74ECF326115DCC003BA3B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E74ECF126115DCC003BA3B2 /* LaunchScreen.storyboard */; };
+		9E74ECFD26115DE9003BA3B2 /* YoutubeKit in Frameworks */ = {isa = PBXBuildFile; productRef = 9E74ECFC26115DE9003BA3B2 /* YoutubeKit */; };
+		9E74ED0226115E97003BA3B2 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E74ECFF26115E97003BA3B2 /* DesignableButton.swift */; };
+		9E74ED0426115E97003BA3B2 /* CALayerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E74ED0126115E97003BA3B2 /* CALayerExt.swift */; };
+		9E74ED0826115EBB003BA3B2 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E74ED0726115EBB003BA3B2 /* SignUp.storyboard */; };
+		9E74ED0B26115EC3003BA3B2 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E74ED0A26115EC3003BA3B2 /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,10 @@
 		9E74ECEF26115DCC003BA3B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E74ECF226115DCC003BA3B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E74ECF426115DCC003BA3B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E74ECFF26115E97003BA3B2 /* DesignableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		9E74ED0126115E97003BA3B2 /* CALayerExt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExt.swift; sourceTree = "<group>"; };
+		9E74ED0726115EBB003BA3B2 /* SignUp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		9E74ED0A26115EC3003BA3B2 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E74ECFD26115DE9003BA3B2 /* YoutubeKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +68,25 @@
 			children = (
 				9E74ECE626115DCB003BA3B2 /* AppDelegate.swift */,
 				9E74ECE826115DCB003BA3B2 /* SceneDelegate.swift */,
+				9E74ED0126115E97003BA3B2 /* CALayerExt.swift */,
+				9E74ECFF26115E97003BA3B2 /* DesignableButton.swift */,
 				9E74ECEA26115DCB003BA3B2 /* ViewController.swift */,
 				9E74ECEC26115DCB003BA3B2 /* Main.storyboard */,
+				9E74ED0D26115ECB003BA3B2 /* Signup Screen */,
 				9E74ECEF26115DCC003BA3B2 /* Assets.xcassets */,
 				9E74ECF126115DCC003BA3B2 /* LaunchScreen.storyboard */,
 				9E74ECF426115DCC003BA3B2 /* Info.plist */,
 			);
 			path = YTPlaylistEx;
+			sourceTree = "<group>";
+		};
+		9E74ED0D26115ECB003BA3B2 /* Signup Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9E74ED0726115EBB003BA3B2 /* SignUp.storyboard */,
+				9E74ED0A26115EC3003BA3B2 /* SignUpViewController.swift */,
+			);
+			path = "Signup Screen";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +105,9 @@
 			dependencies = (
 			);
 			name = YTPlaylistEx;
+			packageProductDependencies = (
+				9E74ECFC26115DE9003BA3B2 /* YoutubeKit */,
+			);
 			productName = YTPlaylistEx;
 			productReference = 9E74ECE326115DCB003BA3B2 /* YTPlaylistEx.app */;
 			productType = "com.apple.product-type.application";
@@ -110,6 +135,9 @@
 				Base,
 			);
 			mainGroup = 9E74ECDA26115DCB003BA3B2;
+			packageReferences = (
+				9E74ECFB26115DE9003BA3B2 /* XCRemoteSwiftPackageReference "YoutubeKit" */,
+			);
 			productRefGroup = 9E74ECE426115DCB003BA3B2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,6 +154,7 @@
 			files = (
 				9E74ECF326115DCC003BA3B2 /* LaunchScreen.storyboard in Resources */,
 				9E74ECF026115DCC003BA3B2 /* Assets.xcassets in Resources */,
+				9E74ED0826115EBB003BA3B2 /* SignUp.storyboard in Resources */,
 				9E74ECEE26115DCB003BA3B2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,9 +166,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E74ED0B26115EC3003BA3B2 /* SignUpViewController.swift in Sources */,
 				9E74ECEB26115DCB003BA3B2 /* ViewController.swift in Sources */,
+				9E74ED0426115E97003BA3B2 /* CALayerExt.swift in Sources */,
 				9E74ECE726115DCB003BA3B2 /* AppDelegate.swift in Sources */,
 				9E74ECE926115DCB003BA3B2 /* SceneDelegate.swift in Sources */,
+				9E74ED0226115E97003BA3B2 /* DesignableButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,7 +248,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		9E74ECFB26115DE9003BA3B2 /* XCRemoteSwiftPackageReference "YoutubeKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:Enchan1207/YoutubeKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.24;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		9E74ECFC26115DE9003BA3B2 /* YoutubeKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9E74ECFB26115DE9003BA3B2 /* XCRemoteSwiftPackageReference "YoutubeKit" */;
+			productName = YoutubeKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 9E74ECDB26115DCB003BA3B2 /* Project object */;
 }
