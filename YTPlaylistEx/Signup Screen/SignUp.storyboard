@@ -101,10 +101,23 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Reb-Hr-blm"/>
+                    <connections>
+                        <segue destination="RiD-MA-ugB" kind="presentation" identifier="ref_to_main" modalPresentationStyle="fullScreen" id="fhn-IX-bXq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2V6-K5-D7a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="757.97101449275374" y="115.84821428571428"/>
+        </scene>
+        <!--Main-->
+        <scene sceneID="EgH-iB-VUZ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" id="RiD-MA-ugB" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Q18-23-UPP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8CI-YQ-5SP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1401" y="116"/>
         </scene>
     </scenes>
     <designables>

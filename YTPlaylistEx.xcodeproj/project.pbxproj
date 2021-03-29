@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E15B6EB26116BC7002BEC3F /* APICredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E15B6EA26116BC7002BEC3F /* APICredentials.swift */; };
 		9E74ECE726115DCB003BA3B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E74ECE626115DCB003BA3B2 /* AppDelegate.swift */; };
 		9E74ECE926115DCB003BA3B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E74ECE826115DCB003BA3B2 /* SceneDelegate.swift */; };
 		9E74ECEB26115DCB003BA3B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E74ECEA26115DCB003BA3B2 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9E15B6EA26116BC7002BEC3F /* APICredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICredentials.swift; sourceTree = "<group>"; };
 		9E74ECE326115DCB003BA3B2 /* YTPlaylistEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YTPlaylistEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E74ECE626115DCB003BA3B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9E74ECE826115DCB003BA3B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				9E74ED0126115E97003BA3B2 /* CALayerExt.swift */,
 				9E74ECFF26115E97003BA3B2 /* DesignableButton.swift */,
 				9E74ECEA26115DCB003BA3B2 /* ViewController.swift */,
+				9E15B6EA26116BC7002BEC3F /* APICredentials.swift */,
 				9E74ECEC26115DCB003BA3B2 /* Main.storyboard */,
 				9E74ED0D26115ECB003BA3B2 /* Signup Screen */,
 				9E74ECEF26115DCC003BA3B2 /* Assets.xcassets */,
@@ -166,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E15B6EB26116BC7002BEC3F /* APICredentials.swift in Sources */,
 				9E74ED0B26115EC3003BA3B2 /* SignUpViewController.swift in Sources */,
 				9E74ECEB26115DCB003BA3B2 /* ViewController.swift in Sources */,
 				9E74ED0426115E97003BA3B2 /* CALayerExt.swift in Sources */,
