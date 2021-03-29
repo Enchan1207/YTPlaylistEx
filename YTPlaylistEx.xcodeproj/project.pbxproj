@@ -384,7 +384,7 @@
 			repositoryURL = "git@github.com:Enchan1207/YoutubeKit.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.24;
+				minimumVersion = 1.0.25;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
