@@ -10,3 +10,5 @@ under construction...
 
 This repository is published under MIT License.
 In details, see [LICENSE](LICENSE).
+
+**NOTE:** This is not the case for image assets.
