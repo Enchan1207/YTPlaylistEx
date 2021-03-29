@@ -32,4 +32,8 @@ class CredentialStore {
         self.keyChain[kAccessCredential] = credential.serialize()!
     }
     
+    func remove(){
+        self.keyChain[kAccessCredential] = nil
+    }
+    
 }

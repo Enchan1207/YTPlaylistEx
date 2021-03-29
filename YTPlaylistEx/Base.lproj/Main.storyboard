@@ -1,64 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vg3-iS-trG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KCp-Fq-Ibu">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Playlists-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Playlist-->
+        <scene sceneID="sj5-gb-MEp">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="YTPlaylistEx" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="if3-3k-f1j">
-                                <rect key="frame" x="188.5" y="465" width="37" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="if3-3k-f1j" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fGd-42-M2W"/>
-                            <constraint firstItem="if3-3k-f1j" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="nMP-VI-69f"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" title="Playlists" id="Lj9-bQ-NNh"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Playlist" id="qm8-qu-P9T" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="b6i-KQ-SZH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lMT-Ny-Zbr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="713.04347826086962" y="50.892857142857139"/>
+            <point key="canvasLocation" x="302" y="-44"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="Mw6-y9-8ov">
+        <scene sceneID="qvU-I5-9dW">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vg3-iS-trG" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sc7-YS-HPZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KCp-Fq-Ibu" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iXd-sQ-bFW">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="xvb-dy-mqm">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3Oa-E5-1M0"/>
+                        <segue destination="qm8-qu-P9T" kind="relationship" relationship="rootViewController" id="hRV-qe-yfZ"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qv0-Na-2wr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-197.10144927536234" y="50.892857142857139"/>
+            <point key="canvasLocation" x="-275.36231884057975" y="-43.526785714285715"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
